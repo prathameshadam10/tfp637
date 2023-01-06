@@ -1,3 +1,5 @@
 #!/bin/bash -x
-rancheck=$(($(($RANDOM%6))+1))+(($(($RANDOM%6))+1))
-echo $rancheck
+x=$(($(($RANDOM%6))+1))
+y=$(($(($RANDOM%6))+1))
+sum=$(( $x+$y ))
+echo " the sum of random two dice is $sum"
